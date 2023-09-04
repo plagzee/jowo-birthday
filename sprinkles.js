@@ -4,7 +4,7 @@ btn.addEventListener('click', function () {
     var textbox = document.getElementById('passg');
 
     if (textbox.value == 'goldfish') {
-        location.href = '/birthday.html';
+        location.href = '/jowo-birthday/birthday.html';
     } else {
         alert('Incorrect!');
     }
