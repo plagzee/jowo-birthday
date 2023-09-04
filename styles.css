@@ -1,0 +1,197 @@
+body, html {
+  background-color: #aaf0d1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.sprinkle {
+  position:absolute;
+  border-radius: 100vh;
+  z-index: 100;
+  animation: bounce-in-sprinkles 0.5s forwards;
+  box-shadow: 1.5vh 1.5vh 0 rgba(0, 0, 0, .25);
+}
+
+.one {
+  transform: rotate(60deg);
+  background-color: #e569a0;
+  top: 30%;
+  left: 90%;
+  animation-delay: 1s;
+}
+
+.two {
+  transform: rotate(-60deg);
+  background-color: #e569a0;
+  top: 70%;
+  left: 67%;
+  animation-delay: 1.5s;
+}
+
+.three {
+  transform: rotate(10deg);
+  background-color: #e569a0;
+  top: 20%;
+  left: 44%;
+  animation-delay: 1.25s;
+}
+
+.four {
+  transform: rotate(-30deg);
+  background-color: #e569a0;
+  top: 60%;
+  left: 87%;
+  animation-delay: 1s;
+}
+
+.five {
+  transform: rotate(67deg);
+  background-color: #e569a0;
+  top: 88%;
+  left: 22%;
+  animation-delay: 1.5s;
+}
+
+.six {
+  transform: rotate(90deg);
+  background-color: #e569a0;
+  top: 47%;
+  left: 32%;
+  animation-delay: 1.5s;
+}
+
+.seven {
+  transform: rotate(-45deg);
+  background-color: #e569a0;
+  top: 20%;
+  left: 63%;
+  animation-delay: 1.25s;
+}
+
+.eight {
+  transform: rotate(20deg);
+  background-color: #e569a0;
+  top: 80%;
+  left: 50%;
+  animation-delay: 1s;
+}
+.nine {
+  transform: rotate(-120deg);
+  background-color: #e569a0;
+  top: 80%;
+  left: 490px;
+  animation-delay: 1.5s;
+}
+
+.ten {
+  transform: rotate(-10deg);
+  background-color: #e569a0;
+  top: 12.5%;
+  left: 450px;
+  animation-delay: 1s;
+}
+
+.eleven {
+  transform: rotate(50deg);
+  background-color: #e569a0;
+  top: 30%;
+  left: 70px;
+  animation-delay: 1.25s;
+}
+
+.twelve {
+  transform: rotate(-20deg);
+  background-color: #e569a0;
+  top: 50%;
+  left: 250px;
+  animation-delay: 1s;
+}
+
+@keyframes bounce-in-sprinkles {
+  0% {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    height: 7.66667vh;
+    width: 2.875vh;
+  }
+  100% {
+    height: 6.66667vh;
+    width: 2.5vh;
+  }
+}
+
+
+button {
+  border-radius: 120px 120px 120px 120px;
+  margin: 1rem auto;
+  padding: 1rem 2rem 1rem;
+  border: 0.2em solid rgba(0, 0, 0, 1);
+  font-size: 1.2rem;
+  background: transparent;
+  letter-spacing: 0.025em;
+}
+
+button:hover {
+  background: #e569a0;
+  color: white;
+  border-color: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+button:active {
+  transform: translateY(5px);
+}
+
+
+.box {
+    /*center the box*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 250px;
+    background-color: #ddd;
+    /* add a border of hello kitty pink*/
+    border: 6px solid #e569a0;
+}
+
+.box input {
+    /*center the input*/
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.box input:focus {
+    border: 2px solid #00ff73;
+    box-shadow: 0 0 10px #00ff73;
+    /* add a tranistion */
+    transition: 0.5s;
+}
+
+.box button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
